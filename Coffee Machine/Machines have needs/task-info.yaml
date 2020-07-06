@@ -109,6 +109,13 @@ files:
         }
     }
   learner_created: false
+- name: src/machine/CoffeeMachine.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/33/stages/176/implement
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/33/stages/176/implement">JetBrains
+    Academy</a>
+  time: Mon, 06 Jul 2020 12:25:01 UTC
+record: 2
