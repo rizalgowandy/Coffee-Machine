@@ -9,74 +9,7 @@ public class CoffeeMachine {
 	static int cupsSupply = 0;
 	static int money = 0;
 
-	public static void main(String[] args) {}
-
-	static void PrintSteps() {
-		final String[] steps = {
-			"Starting to make a coffee",
-			"Grinding coffee beans",
-			"Boiling water",
-			"Mixing boiled water with crushed coffee beans",
-			"Pouring coffee into the cup",
-			"Pouring some milk into the cup",
-			"Coffee is ready!"
-		};
-		for (String step : steps) {
-			System.out.println(step);
-		}
-	}
-
-	static void PrintTotalIngredients() {
-		System.out.println("Write how many cups of coffee you will need:");
-		Scanner in = new Scanner(System.in);
-		int cups = in.nextInt();
-		final int requiredWater = 200;
-		final int requiredMilk = 50;
-		final int requiredBean = 15;
-		int waters = requiredWater * cups;
-		int milks = requiredMilk * cups;
-		int beans = requiredBean * cups;
-		System.out.println(waters + " ml of water");
-		System.out.println(milks + " ml of milk");
-		System.out.println(beans + " g of coffee beans");
-	}
-
-	static void PrintCanMakeOrders() {
-		Scanner in = new Scanner(System.in);
-		System.out.println("Write how many ml of water the coffee machine has: ");
-		waterSupply = in.nextInt();
-		System.out.println("Write how many ml of milk the coffee machine has:");
-		milkSupply = in.nextInt();
-		System.out.println("Write how many grams of coffee beans the coffee machine has:");
-		beanSupply = in.nextInt();
-		System.out.println("Write how many cups of coffee you will need:");
-		int cups = in.nextInt();
-		int supply = ToCup(waterSupply, milkSupply, beanSupply);
-		if (cups < supply) {
-			int extra = supply - cups;
-			System.out.printf("Yes, I can make that amount of coffee " +
-				"(and even %d more than that)\n", extra);
-			return;
-		}
-		if (cups == supply) {
-			System.out.println("Yes, I can make that amount of coffee");
-			return;
-		}
-		System.out.printf("No, I can make only %d cup(s) of coffee\n", supply);
-	}
-
-	static int ToCup(int water, int milk, int bean) {
-		final int requiredWater = 200;
-		final int requiredMilk = 50;
-		final int requiredBean = 15;
-		int maxWater = water / requiredWater;
-		int maxMilk = milk / requiredMilk;
-		int maxBean = bean / requiredBean;
-		int result = Math.min(maxWater, maxMilk);
-		return Math.min(result, maxBean);
-	}
-
-	static void StartBuyFillTake() {
+	public static void main(String[] args) {
 		waterSupply = 400;
 		milkSupply = 540;
 		beanSupply = 120;
@@ -124,28 +57,28 @@ public class CoffeeMachine {
 				requiredMilk = 0;
 				requiredBean = 16;
 				cost = 4;
-				Buy(requiredWater, requiredMilk, requiredBean, cost);
+				BuyByType(requiredWater, requiredMilk, requiredBean, cost);
 				break;
 			case 2:
 				requiredWater = 350;
 				requiredMilk = 75;
 				requiredBean = 20;
 				cost = 7;
-				Buy(requiredWater, requiredMilk, requiredBean, cost);
+				BuyByType(requiredWater, requiredMilk, requiredBean, cost);
 				break;
 			case 3:
 				requiredWater = 200;
 				requiredMilk = 100;
 				requiredBean = 12;
 				cost = 6;
-				Buy(requiredWater, requiredMilk, requiredBean, cost);
+				BuyByType(requiredWater, requiredMilk, requiredBean, cost);
 				break;
 			default:
 				break;
 		}
 	}
 
-	static void Buy(int requiredWater, int requiredMilk, int requiredBean, int cost) {
+	static void BuyByType(int requiredWater, int requiredMilk, int requiredBean, int cost) {
 		waterSupply -= requiredWater;
 		milkSupply -= requiredMilk;
 		beanSupply -= requiredBean;
