@@ -1,0 +1,28 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    // declare your enum here
+
+    public class Main {
+        public static void main(String[] args) {
+            for (DayOfWeek day : DayOfWeek.values()) {
+                System.out.println(day);
+            }
+        }
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/2969
+status: Failed
+feedback:
+  message: |-
+    Compilation error
+    Main.java:3: error: enum DayOfWeek is public, should be declared in a file named DayOfWeek.java
+    public enum DayOfWeek {
+           ^
+    1 error
+
+    Please do not declare public classes.
+  time: Thu, 09 Jul 2020 17:16:23 UTC
+record: -1

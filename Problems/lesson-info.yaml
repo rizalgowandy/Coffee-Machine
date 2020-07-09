@@ -1,28 +1,38 @@
 content:
-- Hello!
-- Cats are robots
-- The Hello World program
-- Hello, Java
-- First, second, third
-- Printing a magic letter
-- Digits from 0 to 9 in a single line
-- Invalid declaration of variables
-- Assignments
-- Fill the declaration
-- Uncomment a line
-- Javadoc comment
-- Printing only the longest line
-- Printing each word in a new line
-- Printing strings in the same order
-- Guest list of a hotel
-- Check the value
-- Groundhogs at a party
-- Exactly one parameter is positive
-- Healthy sleep
-- Triangle
-- Queens
-- Three numbers
-- The forgotten comments
-- Hello, Java platform
-- Incorrect comments
-- The countdown
+  - Hello!
+  - Cats are robots
+  - The Hello World program
+  - Hello, Java
+  - First, second, third
+  - Printing a magic letter
+  - Digits from 0 to 9 in a single line
+  - Invalid declaration of variables
+  - Assignments
+  - Fill the declaration
+  - Uncomment a line
+  - Javadoc comment
+  - Printing only the longest line
+  - Printing each word in a new line
+  - Printing strings in the same order
+  - Guest list of a hotel
+  - Check the value
+  - Groundhogs at a party
+  - Exactly one parameter is positive
+  - Healthy sleep
+  - Triangle
+  - Queens
+  - Three numbers
+  - The forgotten comments
+  - Hello, Java platform
+  - Incorrect comments
+  - The countdown
+  - Does an array contain N?
+  - Alphabetical order
+  - The longest ascending sequence
+  - Points on the 2D plane
+  - Simulating a clock
+  - Car
+  - Project constants and methods
+  - Too many cats
+  - Days of week
+  - Robot control
